@@ -5,7 +5,7 @@
 // =====================================================================================
 <+func type+> |FUNCTION_NAME| ( <+argument_list+> )
 {
-<SPLIT> <+Code starts here+>	
+    {+Code starts here+}
 }		// -----  end of function |FUNCTION_NAME|  -----
 
 <++>
@@ -16,7 +16,7 @@
 // =====================================================================================
 static <+func type+> |FUNCTION_NAME| ( <+argument_list+> )
 {
-<SPLIT> <+code starts here+>
+    {+code starts here+}
 }		// -----  end of static function |FUNCTION_NAME|  -----
 
 <++>
@@ -25,10 +25,10 @@ static <+func type+> |FUNCTION_NAME| ( <+argument_list+> )
 //         Name:  main
 //  Description:  Main function
 // =====================================================================================
-int main ( int argc, char *argv[] )
+int main ( int argc, char *argv[] )<CURSOR>
 {
-    <CURSOR>
-<SPLIT>	return 0;
+    {+Code starts here+}
+    return 0;
 }				// ----------  end of function main  ----------
 == Idioms.enum == map:ie, shortcut:e  ==
 enum |?ENUM_NAME| {<CURSOR>
