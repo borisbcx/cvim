@@ -11,16 +11,22 @@ for ( <CURSOR>; ; )
 |DefaultMacro( 'CONDITION', '{+CONDITION+}' )|
 |DefaultMacro( 'INCREMENT', '{+INCREMENT+}' )|
 for ( |INIT|<CURSOR>; |CONDITION|; |INCREMENT| ) {
-<SPLIT>}
+<SPLIT> <+code starts here+>
+}
+<++>
 == Statements.range-based for == map:sfr, shortcut:a  ==
 for ( <CURSOR>: <-EXPRESSION-> ){
-<SPLIT>}
+<SPLIT> <+code starts here+>
+}
+<++>
 == Statements.if == map:si, shortcut:i  ==
 if ( <CURSOR> )
+    <++>
 == Statements.if block == map:sif, shortcut:f  ==
 if ( <CURSOR> ) {
 <SPLIT><-IF_PART->
 }
+<++>
 == Statements.if else == map:sie, shortcut:e  ==
 if ( <CURSOR> )
 <SPLIT>else
@@ -31,35 +37,46 @@ if ( <CURSOR> ) {
 else {
 <-ELSE_PART->
 }
+<++>
 == Statements.else block == map:se, shortcut:e  ==
 else {
 <CURSOR><SPLIT>
 }
 == Statements.while == map:sw, shortcut:w  ==
 while ( <CURSOR> )
+    <++>
 == Statements.while block == map:swh, shortcut:h  ==
 while ( <CURSOR> ) {
-<SPLIT>}
+<SPLIT> <+code starts here+>
+}
+<++>
 == Statements.switch == map:ss, shortcut:s  ==
 switch ( <CURSOR> ) {
 	case <-LABEL->:	
-		<SPLIT>break;
+		<+code starts here+>
+        break;
 
 	case <-LABEL->:	
+        <+code starts here+>
 		break;
 
 	case <-LABEL->:	
+         <+code starts here+>
 		break;
 
-	default:	
+	default:
+        <+code starts here+>
 		break;
 }				// -----  end switch  ----- 
+<++>
 == Statements.case == map:sc, shortcut:c  ==
 case <CURSOR>:	
+    <+code starts here +>
 break;
-
+<++>
 == Statements.block == map:sb, shortcut:b  ==
 {
 <CURSOR><SPLIT>
 }
+<++>
 

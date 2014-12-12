@@ -2,39 +2,38 @@
 /* 
  * ===  FUNCTION  ======================================================================
  *         Name:  |?FUNCTION_NAME|
- *  Description:  
+ *  Description:  <CURSOR>
  * =====================================================================================
  */
-void<CURSOR>
-|FUNCTION_NAME| ( <+argument_list+> )
+<+function type+> |FUNCTION_NAME| ( <+argument_list+> )
 {
-<SPLIT>	return <+return_value+>;
+<SPLIT> <+code starts here+>
 }		/* -----  end of function |FUNCTION_NAME|  ----- */
+
+<++>
 == Idioms.function-static == map:isf, shortcut:t  ==
 /* 
  * ===  FUNCTION  ======================================================================
  *         Name:  |?FUNCTION_NAME|
- *  Description:  
+ *  Description:  <CURSOR>
  * =====================================================================================
  */
-static void<CURSOR>
-|FUNCTION_NAME| ( <+argument_list+> )
+static <+func type+> |FUNCTION_NAME| ( <+argument_list+> )
 {
 <SPLIT>	return <+return_value+>;
 }		/* -----  end of static function |FUNCTION_NAME|  ----- */
-== Idioms.main == map:im, shortcut:m  ==
-#include	<stdlib.h>
 
-/* 
+<++>
+== Idioms.main == map:im, shortcut:m  ==
+/*
  * ===  FUNCTION  ======================================================================
  *         Name:  main
- *  Description:  
+ *  Description:  Main function
  * =====================================================================================
  */
-int
-main ( int argc, char *argv[] )
+int main ( int argc, char *argv[] )
 {<CURSOR>
-<SPLIT>	return EXIT_SUCCESS;
+<SPLIT>	return 0;
 }				/* ----------  end of function main  ---------- */
 == Idioms.enum == map:ie, shortcut:e  ==
 enum |?ENUM_NAME| {<CURSOR>

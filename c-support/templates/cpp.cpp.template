@@ -163,23 +163,28 @@ class |CLASSNAME|
 		|CLASSNAME| ();                             // constructor 
 
 		// ====================  ACCESSORS     ======================================= 
-
-		// ====================  MUTATORS      ======================================= 
+        <+Accessors+>
 
 		// ====================  OPERATORS     ======================================= 
+        <+Operators+>
 
 	protected:
 		// ====================  METHODS       ======================================= 
+        <+Protected methods+>
 
 		// ====================  DATA MEMBERS  ======================================= 
+        <+Protected member+>
 
 	private:
 		// ====================  METHODS       ======================================= 
+        <+Private methods+>
 
 		// ====================  DATA MEMBERS  ======================================= 
+        <+Private members+>
 
 }; // -----  end of class |CLASSNAME|  ----- 
 
+<++>
 == C++.class using new == map:+cn, shortcut:n ==
 // =====================================================================================
 //        Class:  |?CLASSNAME:c|
@@ -193,26 +198,29 @@ class |CLASSNAME|
     |CLASSNAME| ( const |CLASSNAME| &other );   // copy constructor 
     ~|CLASSNAME| ();                            // destructor       
 
-		// ====================  ACCESSORS     ======================================= 
+	// ====================  ACCESSORS     ======================================= 
+        <+Accessors+>
 
-		// ====================  MUTATORS      ======================================= 
+	// ====================  OPERATORS     ======================================= 
+        <+Operators+>
 
-		// ====================  OPERATORS     ======================================= 
+	protected:
+	// ====================  METHODS       ======================================= 
+        <+Protected methods+>
 
-    |CLASSNAME|& operator = ( const |CLASSNAME| &other ); // assignment operator 
+	// ====================  DATA MEMBERS  ======================================= 
+        <+Protected member+>
 
-  protected:
-		// ====================  METHODS       ======================================= 
+	private:
+	// ====================  METHODS       ======================================= 
+        <+Private methods+>
 
-		// ====================  DATA MEMBERS  ======================================= 
-
-  private:
-		// ====================  METHODS       ======================================= 
-
-		// ====================  DATA MEMBERS  ======================================= 
+	// ====================  DATA MEMBERS  ======================================= 
+        <+Private members+>
 
 }; // -----  end of class |CLASSNAME|  ----- 
 
+<++>
 == C++.template class == map:+tc, shortcut:t ==
 // =====================================================================================
 //        Class:  |?CLASSNAME:c|
@@ -225,23 +233,30 @@ class |CLASSNAME|
     // ====================  LIFECYCLE     ======================================= 
     |CLASSNAME| ();                             // constructor 
 
-		// ====================  ACCESSORS     ======================================= 
 
-		// ====================  MUTATORS      ======================================= 
+	// ====================  ACCESSORS     ======================================= 
+        <+Accessors+>
 
-		// ====================  OPERATORS     ======================================= 
+	// ====================  OPERATORS     ======================================= 
+        <+Operators+>
 
-  protected:
-		// ====================  METHODS       ======================================= 
+	protected:
+	// ====================  METHODS       ======================================= 
+        <+Protected methods+>
 
-    // ====================  DATA MEMBERS  ======================================= 
+	// ====================  DATA MEMBERS  ======================================= 
+        <+Protected member+>
 
-  private:
-		// ====================  METHODS       ======================================= 
+	private:
+	// ====================  METHODS       ======================================= 
+        <+Private methods+>
 
-    // ====================  DATA MEMBERS  ======================================= 
+	// ====================  DATA MEMBERS  ======================================= 
+        <+Private members+>
 
-}; // ----------  end of template class |CLASSNAME|  ---------- 
+}; // -----  end of template class |CLASSNAME|  ----- 
+
+<++>
 
 == C++.template class using new == map:+tcn, shortcut:n ==
 // =====================================================================================
@@ -258,26 +273,30 @@ class |CLASSNAME|
     |CLASSNAME| ( const |CLASSNAME| &other ); // copy constructor 
     ~|CLASSNAME| ();                          // destructor       
 
-		// ====================  ACCESSORS     ======================================= 
 
-		// ====================  MUTATORS      ======================================= 
+	// ====================  ACCESSORS     ======================================= 
+        <+Accessors+>
 
-		// ====================  OPERATORS     ======================================= 
+	// ====================  OPERATORS     ======================================= 
+        <+Operators+>
 
-    |CLASSNAME|& operator = ( const |CLASSNAME| &other ); // assignment operator 
+	protected:
+	// ====================  METHODS       ======================================= 
+        <+Protected methods+>
 
-  protected:
-		// ====================  METHODS       ======================================= 
+	// ====================  DATA MEMBERS  ======================================= 
+        <+Protected member+>
 
-    // ====================  DATA MEMBERS  ======================================= 
+	private:
+	// ====================  METHODS       ======================================= 
+        <+Private methods+>
 
-  private:
-		// ====================  METHODS       ======================================= 
-
-    // ====================  DATA MEMBERS  ======================================= 
+	// ====================  DATA MEMBERS  ======================================= 
+        <+Private members+>
 
 }; // -----  end of template class |CLASSNAME|  ----- 
 
+<++>
 == C++.error class == map:+ec, shortcut:e ==
 // =====================================================================================
 //        Class:  |?CLASSNAME:c|
@@ -301,6 +320,7 @@ class |CLASSNAME|
 {<CURSOR>
 }  // -----  end of method |CLASSNAME|::|CLASSNAME|  (constructor)  ----- 
 
+<++>
 == C++.IMPLEMENTATION.class using new == map:+icn , shortcut:n ==
 //--------------------------------------------------------------------------------------
 //       Class:  |?CLASSNAME:c|
@@ -318,6 +338,7 @@ class |CLASSNAME|
 //--------------------------------------------------------------------------------------
 |CLASSNAME|::|CLASSNAME| ( const |CLASSNAME| &other )
 {
+    <+Copy Constructor+>
 }  // -----  end of method |CLASSNAME|::|CLASSNAME|  (copy constructor)  ----- 
 
 //--------------------------------------------------------------------------------------
@@ -327,6 +348,7 @@ class |CLASSNAME|
 //--------------------------------------------------------------------------------------
 |CLASSNAME|::~|CLASSNAME| ()
 {
+    <+Destructor+>
 }  // -----  end of method |CLASSNAME|::~|CLASSNAME|  (destructor)  ----- 
 
 //--------------------------------------------------------------------------------------
@@ -334,28 +356,34 @@ class |CLASSNAME|
 //      Method:  operator =
 // Description:  assignment operator
 //--------------------------------------------------------------------------------------
-|CLASSNAME|&
-|CLASSNAME|::operator = ( const |CLASSNAME| &other )
+|CLASSNAME|& |CLASSNAME|::operator = ( const |CLASSNAME| &other )
 {
   if ( this != &other ) {
+    <+Operator+>
   }
   return *this;
 }  // -----  end of method |CLASSNAME|::operator =  (assignment operator)  ----- 
 
+<++>
 == C++.IMPLEMENTATION.method == map:+im , shortcut:m ==
-void<CURSOR>
-|?CLASSNAME|::|?METHODNAME| ( <+argument_list+> )
+//--------------------------------------------------------------------------------------
+//       Class:  |?CLASSNAME|
+//      Method:  |?METHODNAME|
+// Description:  <CURSOR>
+//--------------------------------------------------------------------------------------
+<+func Type+> |CLASSNAME|::|METHODNAME| ( <+argument_list+> )
 {
+    <+Code starts here+>
 	return ;
 }		// -----  end of method |CLASSNAME|::|?METHODNAME|  ----- 
 
+<++>
 == C++.IMPLEMENTATION.accessor == map:+ia , shortcut:a ==
 //--------------------------------------------------------------------------------------
 //       Class:  |?CLASSNAME|
 //      Method:  get_|?ATTRIBUTE|
 //--------------------------------------------------------------------------------------
-inline |?RETURNTYPE|
-|CLASSNAME|::get_|ATTRIBUTE| (  ) const
+inline |?RETURNTYPE| |CLASSNAME|::get_|ATTRIBUTE| (  ) const
 {
 	return |ATTRIBUTE|;
 }		// -----  end of method |CLASSNAME|::get_|ATTRIBUTE|  ----- 
@@ -364,33 +392,32 @@ inline |?RETURNTYPE|
 //       Class:  |CLASSNAME|
 //      Method:  set_|ATTRIBUTE|
 //--------------------------------------------------------------------------------------
-inline void
-|CLASSNAME|::set_|ATTRIBUTE| ( |RETURNTYPE| value )
+inline void |CLASSNAME|::set_|ATTRIBUTE| ( |RETURNTYPE| value )
 {
 	|ATTRIBUTE|	= value;
 	return ;
 }		// -----  end of method |CLASSNAME|::set_|ATTRIBUTE|  ----- 
+
 <CURSOR>
 == C++.IMPLEMENTATION.template class == map:+itc , shortcut:c ==
 //--------------------------------------------------------------------------------------
 //       Class:  |?CLASSNAME:c|
 //      Method:  |CLASSNAME|
-// Description:  
+// Description:  <CURSOR>
 //--------------------------------------------------------------------------------------
-template < class T >
-|CLASSNAME| < T >::|CLASSNAME| ()
-{<CURSOR>
+template < class T > |CLASSNAME| < T >::|CLASSNAME| ()
+{
+    <+Code starts here+>
 }  // ----------  end of constructor of template class |CLASSNAME|  ---------- 
 
-
+<++>
 == C++.IMPLEMENTATION.template class using new == map:+itcn , shortcut:n ==
 //--------------------------------------------------------------------------------------
 //       Class:  |?CLASSNAME:c|
 //      Method:  |CLASSNAME|
 // Description:  constructor
 //--------------------------------------------------------------------------------------
-template < class T >
-|CLASSNAME|< T >::|CLASSNAME| ()
+template < class T > |CLASSNAME|< T >::|CLASSNAME| ()
 {<CURSOR>
 }  // ----------  end of constructor of template class |CLASSNAME|  ---------- 
 
@@ -399,9 +426,9 @@ template < class T >
 //      Method:  |CLASSNAME|
 // Description:  copy constructor
 //--------------------------------------------------------------------------------------
-template < class T >
-|CLASSNAME|< T >::|CLASSNAME| ( const |CLASSNAME| &other )
+template < class T > |CLASSNAME|< T >::|CLASSNAME| ( const |CLASSNAME| &other )
 {
+    <+Code starts here+>
 }  // ----------  end of copy constructor of template class |CLASSNAME|  ---------- 
 
 //--------------------------------------------------------------------------------------
@@ -409,9 +436,9 @@ template < class T >
 //      Method:  ~|CLASSNAME|
 // Description:  destructor
 //--------------------------------------------------------------------------------------
-template < class T >
-|CLASSNAME|< T >::~|CLASSNAME| ()
+template < class T > |CLASSNAME|< T >::~|CLASSNAME| ()
 {
+    <+Code starts here+>
 }  // ----------  end of destructor of template class |CLASSNAME|  ---------- 
 
 //--------------------------------------------------------------------------------------
@@ -419,19 +446,25 @@ template < class T >
 //      Method:  operator =
 // Description:  assignment operator
 //--------------------------------------------------------------------------------------
-template < class T >
-|CLASSNAME|< T >& |CLASSNAME|< T >::operator = ( const |CLASSNAME| &other )
+template < class T > |CLASSNAME|< T >& |CLASSNAME|< T >::operator = ( const |CLASSNAME| &other )
 {
+    <+Code starts here+>
   return *this;
 }  // ----------  end of assignment operator of template class |CLASSNAME|  ---------- 
 
+<++>
 == C++.IMPLEMENTATION.template method == map:+itm , shortcut:m ==
-template < class T >
-void<CURSOR> |?CLASSNAME|<T>::|?METHODNAME| ( <+argument_list+> )
+//--------------------------------------------------------------------------------------
+//       Class:  |?CLASSNAME|
+//      Method:  |?METHODNAME|
+// Description:  <CURSOR>
+//--------------------------------------------------------------------------------------
+template < class T > <+Func type+> |?CLASSNAME|<T>::|?METHODNAME| ( <+argument_list+> )
 {
 	return ;
 }		// -----  end of method |CLASSNAME|<T>::|METHODNAME|  ----- 
 
+<+++>
 == C++.IMPLEMENTATION.template accessor == map:+ita , shortcut:a ==
 //--------------------------------------------------------------------------------------
 //       Class:  |?CLASSNAME|
@@ -454,26 +487,32 @@ inline  void |CLASSNAME|<T>::set_|ATTRIBUTE| ( |RETURNTYPE| value )
 	return ;
 }		// -----  end of method |CLASSNAME|<T>::set_|ATTRIBUTE|  ----- 
 
+<++>
 == C++.template function == map:+tf, shortcut:f ==
 template <class T>
 void<CURSOR> |?TEMPALTE_FUNCTION_NAME| ( <+argument_list+> )
 {
+    <+Code starts here+>
 	return ;
 }		// -----  end of template function |?TEMPALTE_FUNCTION_NAME|  ----- 
+
+<++>
 == C++.IMPLEMENTATION.operator, out == map:+ioo, shortcut:o ==
-ostream &
-operator << ( ostream &os, const |?CLASSNAME| &obj )
+ostream & operator << ( ostream &os, const |?CLASSNAME| &obj )
 {
 	os << obj.<CURSOR> ;
 	return os;
-}		// -----  end of function operator <<  ----- 
+}		// -----  end of function operator <<  -----
+
+<++>
 == C++.IMPLEMENTATION.operator, in == map:+ioi, shortcut:i ==
-istream &
-operator >> ( istream &is, |?CLASSNAME| &obj )
+istream & operator >> ( istream &is, |?CLASSNAME| &obj )
 {
 	is >> obj.<CURSOR> ;
 	return is;
 }		// -----  end of function operator >>  ----- 
+
+<++>
 == C++.try catch == map:+tr, shortcut:t ==
 try {
 <SPLIT>}
@@ -502,6 +541,7 @@ if (!ifs) {
 }
 <SPLIT>{-continue_here-}
 ifs.close ();                                 // close ifstream 
+<++>
 == C++.open output file == map:+oof, shortcut:o ==
 string    ofs_file_name = "<CURSOR>";                 // output file name 
 ofstream  ofs;                                // create ofstream object 
@@ -513,6 +553,7 @@ if (!ofs) {
 }
 <SPLIT>{-continue_here-}
 ofs.close ();                                 // close ofstream 
+<++>
 == C++.using namespace std == map:+uns, shortcut:n ==
 using namespace std;
 == C++.using namespace xxx == map:+un, shortcut:n ==

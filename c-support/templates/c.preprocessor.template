@@ -38,9 +38,11 @@
 §-------------------------------------------------------------------------
 == Preprocessor.include-global == map:pg, shortcut:g, insert ==
 #include <<CURSOR>>
+<++>
 §-------------------------------------------------------------------------
 == Preprocessor.include-local == map:pl, shortcut:l, insert ==
 #include "<CURSOR>"
+<++>
 §-------------------------------------------------------------------------
 == Preprocessor.define == map:pd, shortcut:d, insert ==
 #define	<CURSOR>			/*  */
