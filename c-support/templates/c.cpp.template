@@ -161,23 +161,23 @@ ios::|PICK|<CURSOR>
 class |CLASSNAME|
 {
 	public:
-		/* ====================  LIFECYCLE     ======================================= */
-		|CLASSNAME| ();                             /* constructor */
-        <+Constructor+>
-		/* ====================  OPERATORS     ======================================= */
-        <+Operators+>
+	/* ====================  LIFECYCLE     ======================================= */
+	    |CLASSNAME| ();                             /* constructor */
+        {+Constructor+}
+    /* ====================  OPERATORS     ======================================= */
+        {+Operators+}
 
 	protected:
-		/* ====================  METHODS       ======================================= */
-        <+Protected Methods+>
-		/* ====================  DATA MEMBERS  ======================================= */
-        <+Protected Data members+>
+/* ====================  METHODS       ======================================= */
+        {+Protected Methods+}
+/* ====================  DATA MEMBERS  ======================================= */
+        {+Protected Data members+}
 
 	private:
-		/* ====================  METHODS       ======================================= */
-        <+Private methods+>
-		/* ====================  DATA MEMBERS  ======================================= */
-        <+Private members+>
+/* ====================  METHODS       ======================================= */
+        {+Private methods+}
+/* ====================  DATA MEMBERS  ======================================= */
+        {+Private members+}
 }; /* -----  end of class |CLASSNAME|  ----- */
 
 <++>
@@ -196,21 +196,21 @@ class |CLASSNAME|
     |CLASSNAME| ( const |CLASSNAME| &other );   /* copy constructor */
     ~|CLASSNAME| ();                            /* destructor       */
 
-        <+Constructor+>
-		/* ====================  OPERATORS     ======================================= */
-        <+Operators+>
+    {+Constructor+}
+	/* ====================  OPERATORS     ======================================= */
+    {+Operators+}
 
 	protected:
-		/* ====================  METHODS       ======================================= */
-        <+Protected Methods+>
-		/* ====================  DATA MEMBERS  ======================================= */
-        <+Protected Data members+>
+	/* ====================  METHODS       ======================================= */
+    {+Protected Methods+}
+	/* ====================  DATA MEMBERS  ======================================= */
+    {+Protected Data members+>
 
 	private:
-		/* ====================  METHODS       ======================================= */
-        <+Private methods+>
-		/* ====================  DATA MEMBERS  ======================================= */
-        <+Private members+>
+	/* ====================  METHODS       ======================================= */
+    {+Private methods+}
+	/* ====================  DATA MEMBERS  ======================================= */
+    {+Private members+}
 }; /* -----  end of class |CLASSNAME|  ----- */
 
 <++>
@@ -228,21 +228,21 @@ class |CLASSNAME|
     /* ====================  LIFECYCLE     ======================================= */
     |CLASSNAME| ();                             /* constructor */
 
-        <+Constructor+>
-		/* ====================  OPERATORS     ======================================= */
-        <+Operators+>
+    {+Constructor+}
+	/* ====================  OPERATORS     ======================================= */
+    {+Operators+}
 
 	protected:
-		/* ====================  METHODS       ======================================= */
-        <+Protected Methods+>
-		/* ====================  DATA MEMBERS  ======================================= */
-        <+Protected Data members+>
+	/* ====================  METHODS       ======================================= */
+    {+Protected Methods+}
+	/* ====================  DATA MEMBERS  ======================================= */
+    {+Protected Data members+}
 
 	private:
-		/* ====================  METHODS       ======================================= */
-        <+Private methods+>
-		/* ====================  DATA MEMBERS  ======================================= */
-        <+Private members+>
+	/* ====================  METHODS       ======================================= */
+    {+Private methods+}
+	/* ====================  DATA MEMBERS  ======================================= */
+    {+Private members+}
 }; /* -----  end of class |CLASSNAME|  ----- */
 
 <++>
@@ -263,21 +263,21 @@ class |CLASSNAME|
     |CLASSNAME| ( const |CLASSNAME| &other ); /* copy constructor */
     ~|CLASSNAME| ();                          /* destructor       */
 
-        <+Constructor+>
-		/* ====================  OPERATORS     ======================================= */
-        <+Operators+>
+    {+Constructor+}
+	/* ====================  OPERATORS     ======================================= */
+    {+Operators+}
 
 	protected:
-		/* ====================  METHODS       ======================================= */
-        <+Protected Methods+>
-		/* ====================  DATA MEMBERS  ======================================= */
-        <+Protected Data members+>
+	/* ====================  METHODS       ======================================= */
+    {+Protected Methods+}
+	/* ====================  DATA MEMBERS  ======================================= */
+    {+Protected Data members+}
 
 	private:
-		/* ====================  METHODS       ======================================= */
-        <+Private methods+>
-		/* ====================  DATA MEMBERS  ======================================= */
-        <+Private members+>
+	/* ====================  METHODS       ======================================= */
+    {+Private methods+}
+	/* ====================  DATA MEMBERS  ======================================= */
+    {+Private members+}
 }; /* -----  end of class |CLASSNAME|  ----- */
 
 <++>
@@ -308,7 +308,7 @@ class |CLASSNAME|
 {<CURSOR>
 }  /* -----  end of method |CLASSNAME|::|CLASSNAME|  (constructor)  ----- */
 
-<++>
+<SPLIT><++>
 == C++.IMPLEMENTATION.class using new == map:+icn , shortcut:n ==
 /*
  *--------------------------------------------------------------------------------------

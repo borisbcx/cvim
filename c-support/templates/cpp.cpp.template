@@ -163,24 +163,24 @@ class |CLASSNAME|
 		|CLASSNAME| ();                             // constructor 
 
 		// ====================  ACCESSORS     ======================================= 
-        <+Accessors+>
+        {+Accessors+}
 
 		// ====================  OPERATORS     ======================================= 
-        <+Operators+>
+        {+Operators+}
 
 	protected:
 		// ====================  METHODS       ======================================= 
-        <+Protected methods+>
+        {+Protected methods+}
 
 		// ====================  DATA MEMBERS  ======================================= 
-        <+Protected member+>
+        {+Protected member+}
 
 	private:
 		// ====================  METHODS       ======================================= 
-        <+Private methods+>
+        {+Private methods+}
 
 		// ====================  DATA MEMBERS  ======================================= 
-        <+Private members+>
+        {+Private members+}
 
 }; // -----  end of class |CLASSNAME|  ----- 
 
@@ -199,24 +199,24 @@ class |CLASSNAME|
     ~|CLASSNAME| ();                            // destructor       
 
 	// ====================  ACCESSORS     ======================================= 
-        <+Accessors+>
+    {+Accessors+}
 
 	// ====================  OPERATORS     ======================================= 
-        <+Operators+>
+    {+Operators+}
 
 	protected:
 	// ====================  METHODS       ======================================= 
-        <+Protected methods+>
+    {+Protected methods+}
 
 	// ====================  DATA MEMBERS  ======================================= 
-        <+Protected member+>
+    {+Protected member+}
 
 	private:
 	// ====================  METHODS       ======================================= 
-        <+Private methods+>
+    {+Private methods+}
 
 	// ====================  DATA MEMBERS  ======================================= 
-        <+Private members+>
+    {+Private members+}
 
 }; // -----  end of class |CLASSNAME|  ----- 
 
@@ -235,24 +235,24 @@ class |CLASSNAME|
 
 
 	// ====================  ACCESSORS     ======================================= 
-        <+Accessors+>
+    {+Accessors+}
 
 	// ====================  OPERATORS     ======================================= 
-        <+Operators+>
+    {+Operators+}
 
 	protected:
 	// ====================  METHODS       ======================================= 
-        <+Protected methods+>
+    {+Protected methods+}
 
 	// ====================  DATA MEMBERS  ======================================= 
-        <+Protected member+>
+    {+Protected member+}
 
 	private:
 	// ====================  METHODS       ======================================= 
-        <+Private methods+>
+    {+Private methods+}
 
 	// ====================  DATA MEMBERS  ======================================= 
-        <+Private members+>
+    {+Private members+}
 
 }; // -----  end of template class |CLASSNAME|  ----- 
 
@@ -275,24 +275,24 @@ class |CLASSNAME|
 
 
 	// ====================  ACCESSORS     ======================================= 
-        <+Accessors+>
+    {+Accessors+}
 
 	// ====================  OPERATORS     ======================================= 
-        <+Operators+>
+    {+Operators+}
 
 	protected:
 	// ====================  METHODS       ======================================= 
-        <+Protected methods+>
+    {+Protected methods+}
 
 	// ====================  DATA MEMBERS  ======================================= 
-        <+Protected member+>
+    {+Protected member+}
 
 	private:
 	// ====================  METHODS       ======================================= 
-        <+Private methods+>
+    {+Private methods+}
 
 	// ====================  DATA MEMBERS  ======================================= 
-        <+Private members+>
+    {+Private members+}
 
 }; // -----  end of template class |CLASSNAME|  ----- 
 
@@ -320,7 +320,7 @@ class |CLASSNAME|
 {<CURSOR>
 }  // -----  end of method |CLASSNAME|::|CLASSNAME|  (constructor)  ----- 
 
-<++>
+<SPLIT><++>
 == C++.IMPLEMENTATION.class using new == map:+icn , shortcut:n ==
 //--------------------------------------------------------------------------------------
 //       Class:  |?CLASSNAME:c|
