@@ -10,7 +10,7 @@ SetMacro( 'EMAIL',       'chongxi.bao@gmail.com' )
 SetMacro( 'LICENSE',     '' )
 SetMacro( 'ORGANIZATION','ECE, University of Maryland' )
 
-SetStyle( 'C' )
+SetStyle('C')
 
 § prefix used for Doxygen commands, '\' or '@'
 SetMacro( 'DOX_CMD', '\' )
