@@ -2,7 +2,7 @@
 do {
 <SPLIT>} while ( <CURSOR> );				/* -----  end do-while  ----- */
 == Statements.for == map:sf, shortcut:o  ==
-for ( <CURSOR>; ; )
+for ( <CURSOR>;<+Condition+>;<+Increment+> )
 §
 § The names INIT, CONDITION, INCREMENT, and 'for block' are used by the main
 § plugin plugin/c.vim . Please do not change.
